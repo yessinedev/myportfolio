@@ -95,8 +95,8 @@ export const AboutSection = () => {
           title="A Glimps Into My World"
           description="Learn more about who I am, what I do, and what inspires me"
         />
-        <div className="mt-20 flex flex-col gap-8">
-          <Card className="h-[320px] md:col-span-3">
+        <div className="mt-20 flex flex-col md:flex-row gap-8">
+          <Card className="h-[320px] md:col-span-3 md:w-[60%]">
             <CardHeader
               title="My Toolbox"
               description="Explore the technologies and tools I useto craft exceptional
