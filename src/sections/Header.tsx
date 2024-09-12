@@ -6,7 +6,7 @@ export const Header = () => {
   const scrollToSection = (e: any, id:string) => {
     console.log("cliecked")
     e.preventDefault();
-    let section = document.querySelector(id);
+    let section = document.querySelector(id) as HTMLElement;;
     console.log(section)
     window.scrollTo({
       top: section?.offsetTop,
