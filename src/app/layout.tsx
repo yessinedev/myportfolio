@@ -4,8 +4,8 @@ import "./globals.css";
 import { twMerge } from "tailwind-merge";
 
 export const metadata: Metadata = {
-  title: "My Portfolio",
-  description: "Created with the help of Frontend Tribe",
+  title: "Yessine's Portfolio",
+  description: "Yessine Agrebi Full Stack Developer, A Freelancer From Tunisia, Works with Nextjs",
 };
 
 const inter = Inter({subsets: ["latin"], variable: "--font-sans"});
