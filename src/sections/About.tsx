@@ -1,3 +1,4 @@
+
 import { Card } from "@/components/Card";
 import { SectionHeader } from "@/components/SectionHeader";
 import JavascriptIcon from "@/assets/icons/square-js.svg";
@@ -7,12 +8,9 @@ import NestjsIcon from "@/assets/icons/nestjs.svg";
 import GitIcon from "@/assets/icons/git.svg";
 import TailwindIcon from "@/assets/icons/tailwindcss.svg";
 import CssIcon from "@/assets/icons/css3.svg";
-import { TechIcon } from "@/components/TechIcon";
-import MapImage from "@/assets/images/map2.png";
-import MemojiSmile from "@/assets/images/memoji-smile.png";
-import Image from "next/image";
 import { CardHeader } from "@/components/CardHeader";
 import { ToolboxItems } from "@/components/ToolboxItems";
+import Hobbies from "@/components/Hobbies";
 
 const tools = [
   {
@@ -45,46 +43,7 @@ const tools = [
   },
 ];
 
-const hobbies = [
-  {
-    title: "Gaming",
-    emoji: "🎮",
-    left: '5%',
-    top: '5%'
-  },
-  {
-    title: "Camping",
-    emoji: "⛺",
-    left: '50%',
-    top: '5%'
-  },
-  {
-    title: "Movies",
-    emoji: "🎬",
-    left: '15%',
-    top: '35%'
-  },
-  {
-    title: "Music",
-    emoji: "🎵",
-    left: '20%',
-    top: '70%'
-  },
-  {
-    title: "Fitness",
-    emoji: "🏋️‍♂️",
-    left: '40%',
-    top: '55%'
-  },
-  {
-    title: "Reading",
-    emoji: "🏋️‍♂️",
-    left: '60%',
-    top: '30%'
-  },
- 
 
-];
 
 export const AboutSection = () => {
   return (
@@ -103,34 +62,20 @@ export const AboutSection = () => {
                 digital experiences."
               className=""
             />
-            <ToolboxItems tools={tools} className="" />
+            <ToolboxItems tools={tools} className="" itemsWrapperClassName="animate-move-left [animation-duration:30s]" />
             <ToolboxItems
               tools={tools}
               className="mt-6"
-              itemsWrapperClassName="-translate-x-1/2"
+              itemsWrapperClassName="animate-move-right [animation-duration:15s]"
             />
           </Card>
-          <Card className="h-[320px] p-0 flex flex-col">
+          <Card className="h-[320px] md:w-[40%] p-0 flex flex-col">
             <CardHeader
               title="Beyond the Code"
               description="Explore my interests and hobbies beyond the digital realm"
               className="px-6 py-6"
             />
-            <div className="relative flex-1">
-              {hobbies.map((hobby) => (
-                <div
-                  key={hobby.title}
-                  className="inline-flex items-center gap-2 px-6 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1.5 absolute"
-                  style={{
-                    left: hobby.left,
-                    top: hobby.top,
-                  }}
-                >
-                  <span className="font-medium text-gray-950">{hobby.title}</span>
-                  <span>{hobby.emoji}</span>
-                </div>
-              ))}
-            </div>
+            <Hobbies />
           </Card>
           {/* <Card className="h-[320px] p-0">
             <Image src={MapImage} alt="map" className="h-full w-full object-cover object-left-top" />
