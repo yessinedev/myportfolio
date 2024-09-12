@@ -50,7 +50,7 @@ export const HeroSection = () => {
         </HeroOrbit>
       </div>
 
-      <div className="container">
+      <div className="container" id="hero">
         <div className="flex flex-col items-center justify-center">
           <Image
             src={memojiImage}
@@ -68,8 +68,11 @@ export const HeroSection = () => {
         </div>
         <div className="max-w-lg mx-auto">
           <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">
-            Building Exceptional User Experiences
+            Yessine Agrebi
           </h1>
+          <h3 className="font-sans mt-2 text-center text-white/80 md:text-lg">
+            Full Stack Developer
+          </h3>
           <p className="mt-4 text-center text-white/60 md:text-lg">
             I specialize in turning ideas into functional, high-performing web
             applications. Let&apos;s discuss your next project.

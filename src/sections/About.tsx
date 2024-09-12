@@ -47,7 +47,7 @@ const tools = [
 
 export const AboutSection = () => {
   return (
-    <div className="py-20">
+    <div className="py-20" id="about">
       <div className="container">
         <SectionHeader
           eyebrow="About Me"

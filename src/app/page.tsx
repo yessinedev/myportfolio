@@ -8,7 +8,7 @@ import { TapeSection } from "@/sections/Tape";
 
 export default function Home() {
   return (
-    <div>
+    <div id="home">
       <Header />
       <HeroSection />
       <AboutSection />
