@@ -1,18 +1,10 @@
 "use client";
+import { scrollToSection } from "@/utils";
 import Link from "next/link";
 
 export const Header = () => {
   
-  const scrollToSection = (e: any, id:string) => {
-    console.log("cliecked")
-    e.preventDefault();
-    let section = document.querySelector(id) as HTMLElement;;
-    console.log(section)
-    window.scrollTo({
-      top: section?.offsetTop,
-      behavior: "smooth",
-    });
-  };
+  
 
   return (
     <div className="flex justify-center items-center fixed top-3 w-full z-10">

@@ -28,7 +28,7 @@ export function ContactForm() {
     }
   };
   return (
-    <section className="container">
+    <section className="container" id="contact-form">
       <div className="pb-8 max-w-screen-lg">
         <form ref={form} onSubmit={sendEmail} className="space-y-8">
           <div className="flex flex-col md:flex-row justify-center items-center gap-4 w-full">

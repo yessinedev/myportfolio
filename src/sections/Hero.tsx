@@ -1,3 +1,4 @@
+'use client'
 import ArrowDown from "@/assets/icons/arrow-down.svg";
 import Image from "next/image";
 import memojiImage from "@/assets/images/memoji-computer.png";
@@ -5,6 +6,7 @@ import grainImage from "@/assets/images/grain.jpg";
 import StarIcon from "@/assets/icons/star.svg";
 import SparkleIcon from "@/assets/icons/sparkle.svg";
 import HeroOrbit from "@/components/HeroOrbit";
+import { scrollToSection } from "@/utils";
 
 export const HeroSection = () => {
   return (
@@ -79,11 +81,11 @@ export const HeroSection = () => {
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-          <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl">
+          <button onClick={(e) => scrollToSection(e, '#projects')} className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl">
             <span className="font-semibold">Explore My Work</span>
             <ArrowDown className="size-4" />
           </button>
-          <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
+          <button onClick={(e) => scrollToSection(e, '#contact-form')} className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
             <span>👋</span>
             <span className="font-semiblod">Let&apos;s Connect</span>
           </button>

@@ -4,19 +4,19 @@ import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 const footerLinks = [
   {
     title: 'Github',
-    href: '#'
+    href: 'https://www.github.com/yessinedev'
   },
   {
     title: 'LinkedIn',
-    href: '#'
+    href: 'https://www.linkedin.com/in/yessine-agrebi'
   },
   {
     title: 'Instagram',
-    href: '#'
+    href: 'https://www.instagram.com/agrebi.yessine'
   },
   {
     title: 'Twitter',
-    href: '#'
+    href: '#https://x.com/YessineAgrebi'
   },
 ]
 export const Footer = () => {
