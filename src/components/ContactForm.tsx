@@ -37,7 +37,7 @@ export function ContactForm() {
               <div className="md:w-[40%] w-full">
                 <label
                   htmlFor="name"
-                  className="block mb-2 text-sm font-medium text-gray-200"
+                  className="block mb-2 text-sm font-medium text-gray-300"
                 >
                   Your Name
                 </label>
@@ -45,7 +45,7 @@ export function ContactForm() {
                   type="text"
                   id="name"
                   name="name"
-                  className="shadow-sm bg-gray-50 text-gray-900 border border-gray-300 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+                  className="shadow-sm bg-gray-700 text-gray-400 border border-gray-900/60 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
                   placeholder="Enter your name"
                   required
                 />
@@ -53,7 +53,7 @@ export function ContactForm() {
               <div className="md:w-[60%] w-full">
                 <label
                   htmlFor="email"
-                  className="block mb-2 text-sm font-medium text-gray-200"
+                  className="block mb-2 text-sm font-medium text-gray-300"
                 >
                   Your email
                 </label>
@@ -61,7 +61,7 @@ export function ContactForm() {
                   type="email"
                   id="email"
                   name="email"
-                  className="shadow-sm bg-gray-50 text-gray-900 border border-gray-300 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+                  className="shadow-sm bg-gray-700 text-gray-400 border border-gray-900/60 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
                   placeholder="Enter your email"
                   required
                 />
@@ -70,7 +70,7 @@ export function ContactForm() {
             <div>
               <label
                 htmlFor="subject"
-                className="block mb-2 text-sm font-medium text-gray-200"
+                className="block mb-2 text-sm font-medium text-gray-300"
               >
                 Subject
               </label>
@@ -78,7 +78,7 @@ export function ContactForm() {
                 type="text"
                 id="subject"
                 name="subject"
-                className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                className="block p-3 w-full text-sm text-gray-400 bg-gray-700 rounded-lg border border-gray-900/60 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                 placeholder="Let me know how I can help you"
                 required
               />
@@ -86,7 +86,7 @@ export function ContactForm() {
             <div className="sm:col-span-2">
               <label
                 htmlFor="message"
-                className="block mb-2 text-sm font-medium text-gray-200"
+                className="block mb-2 text-sm font-medium text-gray-300"
               >
                 Your message
               </label>
@@ -94,11 +94,11 @@ export function ContactForm() {
                 id="message"
                 name="message"
                 rows={6}
-                className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                className="block p-2.5 w-full text-sm text-gray-400 bg-gray-700 rounded-lg shadow-sm border border-gray-900/60 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                 placeholder="Type your message..."
               ></textarea>
             </div>
-            <button className="border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
+            <button className="border border-gray-900/60 bg-gray-700/80 text-gray-300 h-12 px-6 rounded-xl">
               <span className="font-semiblod">Send Message</span>
             </button>
           </form>
