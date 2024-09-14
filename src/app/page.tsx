@@ -1,3 +1,4 @@
+import ContactForm from "@/components/ContactForm";
 import { AboutSection } from "@/sections/About";
 import { ContactSection } from "@/sections/Contact";
 import { Footer } from "@/sections/Footer";
@@ -15,6 +16,7 @@ export default function Home() {
       <TapeSection />
       <ProjectsSection />
       <ContactSection />
+      <ContactForm />
       <Footer />
     </div>
   );
