@@ -34,7 +34,7 @@ export function ContactForm() {
         <div className="py-8 max-w-screen-lg">
           <form ref={form} onSubmit={sendEmail} className="space-y-8">
             <div className="flex flex-col md:flex-row justify-center items-center gap-4 w-full">
-              <div className="w-[40%] sm:w-full">
+              <div className="md:w-[40%] w-full">
                 <label
                   htmlFor="name"
                   className="block mb-2 text-sm font-medium text-gray-200"
@@ -50,7 +50,7 @@ export function ContactForm() {
                   required
                 />
               </div>
-              <div className="w-[60%] sm:w-full">
+              <div className="md:w-[60%] w-full">
                 <label
                   htmlFor="email"
                   className="block mb-2 text-sm font-medium text-gray-200"
