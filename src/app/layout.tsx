@@ -6,7 +6,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
-  title: "Yessine's Portfolio",
+  title: "Yessine Agrebi",
   description: "Yessine Agrebi Full Stack Developer, A Freelancer From Tunisia, Works with Nextjs",
 };
 
