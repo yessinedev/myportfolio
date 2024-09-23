@@ -6,8 +6,12 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://yessineagrebi.pro'),
+  keywords: ['Yessine Agrebi', 'Fullstack developer', 'Software Developer', 'Nextjs Developer', 'Frontend Developer', 'Backend Developer', 'React developer', 'Software engineer', 'Freelance Developer'],
   title: "Yessine Agrebi",
-  description: "Yessine Agrebi Full Stack Developer, A Freelancer From Tunisia, Works with Nextjs",
+  openGraph: {
+    description: "Yessine Agrebi Full Stack Developer, A Freelancer From Tunisia, Works with Nextjs",
+  }
 };
 
 const inter = Inter({subsets: ["latin"], variable: "--font-sans"});
