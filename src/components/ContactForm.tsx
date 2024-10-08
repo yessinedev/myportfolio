@@ -2,6 +2,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { Card } from "./Card";
+import toast from "react-hot-toast";
 
 export function ContactForm() {
   const form = useRef<HTMLFormElement | null>(null);
@@ -20,10 +21,10 @@ export function ContactForm() {
         })
         .then(
           () => {
-            console.log("SUCCESS!");
+            toast.success('Mail sent successfully')
           },
           (error) => {
-            console.log("FAILED...", error);
+            toast.error('Error while sending the mail')
           }
         );
     }
