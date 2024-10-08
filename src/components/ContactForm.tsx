@@ -19,14 +19,8 @@ export function ContactForm() {
         .sendForm(serviceId, templateId, form.current, {
           publicKey: publicKeyy,
         })
-        .then(
-          () => {
-            toast.success('Mail sent successfully')
-          },
-          (error) => {
-            toast.error('Error while sending the mail')
-          }
-        );
+        .then(() => toast.success("Mail sent successfully"))
+        .catch(() => toast.error("Error while sending the mail"));
     }
   };
   return (
