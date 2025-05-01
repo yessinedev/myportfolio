@@ -5,6 +5,7 @@ import { twMerge } from "tailwind-merge";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Toaster } from "react-hot-toast";
+import Head from "next/head";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://yessineagrebi.pro"),
@@ -40,6 +41,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <script
+          src="https://ynhbuis9glth1iwfhgnmnmksc7xz29-00rw--50415--2e03455b.local-credentialless.webcontainer-api.io/tracker.js"
+          async
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.analyticsTracker?.init("k57ancg7e96p2bkj4s9k6n1tvs7f2r8s");
+            `,
+          }}
+        />
+      </Head>
       <body
         className={twMerge(
           inter.variable,
